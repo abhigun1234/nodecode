@@ -1,0 +1,7 @@
+// //console.log(module)
+// var  logger  =require('./logger')
+// console.log("logger",logger)
+// logger.log('hello')
+var login=require('./login')
+login.login_user()
+//console.log("module",module)

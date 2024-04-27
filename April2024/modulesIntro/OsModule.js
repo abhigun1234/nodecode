@@ -1,0 +1,5 @@
+const os =require ('os')
+var freeMem=os.freemem()
+var total=os.totalmem()
+console.log("freemem",freeMem)
+console.log("total",total)
