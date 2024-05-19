@@ -6,6 +6,14 @@ var fs=require('fs')
 // console.log("hello")
 function readMyFile(error,data){
 
-      console.log("data",data)
-      console.log("error",error)
+      // console.log("data",data)
+      // console.log("error",error)
+      if(data){
+
+            console.log("data",data)
+      }
+      else{
+            console.log("file not found")
+      }
+
 }
