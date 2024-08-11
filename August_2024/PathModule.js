@@ -1,0 +1,6 @@
+const path=require('path')
+const osModule=require('os')
+var pathObj=path.parse(__dirname)
+console.log("pathObj",pathObj)
+ console.log("memory",osModule.freemem())
+ console.log("memory",osModule.type())
