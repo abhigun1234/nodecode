@@ -16,4 +16,9 @@ const http=require('http')
             res.write("hello india")
             res.end()
         }
+        if(req.url==='/products'){
+
+            res.write("product list")
+            res.end()
+        }
     }).listen(3000)
