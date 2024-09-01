@@ -4,7 +4,7 @@ const mongoes=require('mongoose');
 //step 2
 mongoes.connect('mongodb://localhost:27017/myretail',{useNewUrlParser: true})
 //step 3"productname" : "addidas", "price" : "3456", "productdescription" : "addidas sports shoes"
-var Product =mongoes.model('myprod',{prod_name:String,price:String,description:String})
+var Product =mongoes.model('myprod',{name:String,price:String,description:String})
 
 //const p1= new Product({name:'nike',price:'145555',description:'addidas sports'})
 // p1.save().then(res=>{

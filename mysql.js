@@ -9,15 +9,15 @@ var con = mysql.createConnection({
 
 const express =require('express')
 const app =express()
-// con.connect(function(err) {
-//   if (err) throw err;
-//   console.log("Connected!");
-//   var sql = "INSERT INTO product (product_name, product_price) VALUES ('bata', '230')";
-//   con.query(sql, function (err, result) {
-//     if (err) throw err;
-//     console.log("1 record inserted");
-//   });
-// });
+con.connect(function(err) {
+  if (err) throw err;
+  console.log("Connected!");
+  var sql = "INSERT INTO product (product_name, product_price) VALUES ('addidas', '230')";
+  con.query(sql, function (err, result) {
+    if (err) throw err;
+    console.log("1 record inserted");
+  });
+});
 
   app.listen(2003,'',function()
   
@@ -32,7 +32,9 @@ const app =express()
       
       con.query("SELECT * FROM product ", function (err, result, fields) {
         
-        console.log(result[0].product_name);
+        console.log(err);
+        console.log(result);
+       
         //objs.push(result[0].product_name)
         for (var i = 0;i < result.length; i++) {
           objs.push({"productname": result[i].product_name,"product_price": result[i].product_price});

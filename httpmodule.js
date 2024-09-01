@@ -6,3 +6,4 @@ http.createServer(function(request,response){
     response.write("bye")
     response.end()
 }).listen(8080);
+// http.get()''

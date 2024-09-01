@@ -6,3 +6,5 @@ function hello()
 }
 myvar.bye()
 myvar.byebye()
+myvar.myNewMethod()
+

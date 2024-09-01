@@ -1,9 +1,9 @@
 console.log("custumer 1 request")
-setTimeout(callback,5000)
+setTimeout(callback,15000)
 console.log("custumer 2 request")
 setTimeout(callback,5000)
 console.log("custumer 3 request")
-setTimeout(callback,5000)
+setTimeout(callback,1000)
 
  function callback()
  {
