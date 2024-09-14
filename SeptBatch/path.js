@@ -1,0 +1,8 @@
+// const path=require ('path')
+// var pathObj=path.parse(__dirname)
+// console.log("pathObj",pathObj)
+const os =require ('os')
+var freeMem=os.freemem()
+var total=os.totalmem()
+console.log("freemem",freeMem)
+console.log("total",total)
